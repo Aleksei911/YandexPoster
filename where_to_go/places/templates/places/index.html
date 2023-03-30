@@ -39,6 +39,7 @@
     }
   </style>
   <script id="places-geojson" type="application/json">
+
     {
       "type": "FeatureCollection",
       "features": [
@@ -51,7 +52,7 @@
           "properties": {
             "title": "«Легенды Москвы",
             "placeId": "moscow_legends",
-            "detailsUrl": "{% static 'places/moscow_legends.json' %}"
+            "detailsUrl": "{{ context1 }}"
           }
         },
         {
@@ -63,11 +64,12 @@
           "properties": {
             "title": "Крыши24.рф",
             "placeId": "roofs24",
-            "detailsUrl": "{% static 'places/roofs24.json' %}"
+            "detailsUrl": "{{ context2 }}"
           }
         }
       ]
     }
+
   </script>
 
   <script id="app-template" type="text/template">
